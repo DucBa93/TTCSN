@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <img class="thumbnail" src="https://docsachhay.vn/wp-content/uploads/2021/04/khai-niem-project.jpg" alt="">
+    <div class="row">
+        <a href="index.html" class="home">Về trang chủ</a>
+        <div class="head">
+            <h2>Danh sách dự án</h2>
+        </div>
+    </div>
+    <ul id="list-project"></ul>
+
+
+    <!-- form-popup -->
+    <div class="form-popup">
+        <i class="close-btn fa-solid fa-xmark"></i>
+        <div class="showInfo"></div>
+    </div>
+
+
+    <script src="xemDuAn.js"></script>
+    <style>
+        .form-popup {
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            max-width: 720px;
+            width: 400px;
+            height: 300px;
+            background: #ECF4D6;
+            border: 2px solid #000;
+            z-index: 999;
+            border-radius: 20px;
+            opacity: 0;
+            transform: translate(-50%, -100%);
+            font-size: 1.25rem;
+        }
+
+        .showUp.form-popup {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            transition: .2s ease;
+        }
+
+        .hide.form-popup {
+            opacity: 0;
+        }
+
+        #list-detail {}
+
+        .thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .head {
+            border: 1px solid #000;
+            width: 200px;
+            padding: 0 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 50%;
+            margin-top: 15px;
+            transform: translateX(-50%);
+        }
+
+        #list-project {
+            background-color: #9AD0C2;
+            border-radius: 5px;
+            border: 1px solid #000;
+            border-width: 50%;
+            font-size: 1.25rem;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #000;
+            transition: .2s ease;
+        }
+
+        .home:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+
+        .close-btn {
+            padding: 15px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+
+</html>

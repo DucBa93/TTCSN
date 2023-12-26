@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website quản lý dự án</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="thumbnail">
+            <img src="./img/pm 2.jpeg" class="image_top" alt="">
+        </div>
+        <div class="form">
+            <a href="#" class="dang_nhap">Đăng nhập</a>
+        </div>
+        <ul class="after">
+
+        </ul>
+    </header>
+
+    <!-- form-popup -->
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <i class="close-btn fa-solid fa-xmark"></i>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please using personal information to login</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input class="login_userName" type="text" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input class="login_password" type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass">Forgot password ?</a>
+                    <button class="submit">Log in</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+                <ul class="listUser">
+
+                </ul>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our family</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input class="sign_username" type="text" required>
+                        <label for="">Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input class="sign_password" type="password" required>
+                        <label for="">Create Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the Term & Cpnditions
+                        </label>
+                    </div>
+                    <button class="signUp">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <img src="./img/product-management.jpg" class="img_body" alt="">
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>

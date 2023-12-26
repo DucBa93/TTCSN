@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <h1>Báo cáo tiến độ</h1>
+    <a href="index.html" class="home">Về trang chủ</a>
+
+    <div class="row">
+        <ul id="list-project"></ul>
+        <img src="./img/pexels-canva-studio-3194519.jpg" class="image" alt="">
+    </div>
+
+    <div class="form-popup">
+        <i class="close-btn fa-solid fa-xmark"></i>
+        <div class="showInfo">
+            <div class="report">
+                <div class="item">
+                    <label for="">Ngày báo cáo</label>
+                    <input type="text" name="date">
+                </div>
+                <div class="item">
+                    <label for="">Mô tả dự án</label>
+                    <input type="text" name="illustrate">
+                </div>
+                <div class="item">
+                    <label for="">Tiến độ</label>
+                    <input type="text" name="progress">
+                </div>
+                <div class="item">
+                    <label for="">Ngày dự tính hoàn thành</label>
+                    <input type="text" name="end">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form_progress">
+        <i class="close-btn close-btn-progress fa-solid fa-xmark"></i>
+        <div class="showProgress">
+
+        </div>
+    </div>
+
+
+    <script src="tienDo.js"></script>
+    <style>
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #list-project {
+            width: 70%;
+            list-style-type: none;
+        }
+
+        .image {
+            width: 30%;
+            width: 400px;
+            height: 700px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+
+        body {
+            background-color: #5FBDFF;
+        }
+
+        .form_progress,
+        .form-popup {
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            max-width: 720px;
+            width: 450px;
+            height: 300px;
+            background: #fff;
+            border: 2px solid #000;
+            z-index: 999;
+            opacity: 0;
+            border-radius: 20px;
+            transform: translate(-50%, -100%);
+        }
+
+        .close-btn {
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .showUp.form_progress,
+        .showUp.form-popup {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            transition: .2s ease;
+        }
+
+        .hide.form_progress,
+        .hide.form-popup {
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #000;
+            transition: .2s ease;
+        }
+
+        .report {
+            margin: 20px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .complete {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #000;
+            border-radius: 5px;
+        }
+    </style>
+</body>
+
+</html>

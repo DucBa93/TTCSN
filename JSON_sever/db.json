@@ -1,0 +1,107 @@
+{
+  "List-Project": [
+    {
+      "maDA": "932004",
+      "tenDA": "tri tue nhan tao",
+      "nhanLuc": "100",
+      "nganSach": "200$",
+      "id": 1,
+      "ngayBaoCao": "14/12/2023",
+      "moTa": "phát triển bình thường",
+      "tienDo": "6/10",
+      "ngayHoanThanh": "20/12/2023"
+    },
+    {
+      "maDA": "1",
+      "tenDA": "11",
+      "nhanLuc": "1",
+      "nganSach": "1",
+      "id": 3,
+      "ngayBaoCao": "2",
+      "moTa": "11",
+      "tienDo": "1",
+      "ngayHoanThanh": "1"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "concac",
+      "password": "concac"
+    },
+    {
+      "username": "baduc",
+      "password": "baduc",
+      "id": 2
+    },
+    {
+      "username": "maiduong123",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "username": "thaibaduc",
+      "password": "932003",
+      "id": 4
+    }
+  ],
+  "Member": [
+    {
+      "id": 1,
+      "maDA": "932003",
+      "maTV": "",
+      "tenTV": "trịnh mai dương",
+      "email": "thaibaduckk2003@gmail.com",
+      "vaiTro": "coder",
+      "SDT": "0399395344",
+      "diaChi": "HCM"
+    },
+    {
+      "maDA": "1",
+      "maTV": "1",
+      "tenTV": "1",
+      "email": "1",
+      "vaiTro": "1",
+      "SDT": "1",
+      "diaChi": "1",
+      "id": 2
+    }
+  ],
+  "nganSach": [
+    {
+      "id": 1,
+      "maDA": "932003",
+      "NSduTru": 100000,
+      "chiPhiVT": 20000000,
+      "chiPhiNL": 40000000,
+      "tenDA": "100000",
+      "nhanLuc": "20000000",
+      "nganSach": "40000000"
+    },
+    {
+      "maDA": "1222222",
+      "tenDA": "3333333",
+      "nhanLuc": "444444",
+      "nganSach": "2112414",
+      "id": 2
+    }
+  ],
+  "TaiLieu": [
+    {
+      "id": 1,
+      "maDA": "1222222",
+      "maTL": 932003,
+      "tenTL": "tri tue nhan tao",
+      "nguonTL": "internet",
+      "moTa": "phát triển bình thường"
+    },
+    {
+      "maDA": "1",
+      "maTL": "1",
+      "tenTL": "1",
+      "nguonTL": "1",
+      "moTa": "1",
+      "id": 2
+    }
+  ]
+}

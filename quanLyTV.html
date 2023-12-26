@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">Quản lý thành viên</h2>
+        <a href="index.html" class="home">Về trang chủ</a>
+        <div class="row">
+            <img src="./img/tv.jpeg" alt="" class="left">
+
+            <div class="right">
+                <ul id="list-project">
+
+                </ul>
+                <div class="form">
+                    <div style="margin-top: 10px;">
+                        <label for="">Ma du an</label>
+                        <input type="text" name="maDA">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label for="">Mã thành viên</label>
+                        <input type="text" name="maTV">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label for="">Tên thành viên</label>
+                        <input type="text" name="tenTV">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label for="">Email</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label for="">Vai trò</label>
+                        <input type="text" name="vaiTro">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label for="">SĐT</label>
+                        <input type="text" name="sdt">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label for="">Địa chỉ</label>
+                        <input type="text" name="diaChi">
+                    </div>
+
+                    <div style="margin-top: 10px;">
+                        <button id="create">Thêm thành viên</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="quanLyTV.js"></script>
+
+    <style>
+        .form {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 20px;
+            width: 300px;
+            color: #fff;
+        }
+
+        #list-project {
+            list-style-type: none;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 2rem;
+            font-size: 500;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .left {
+            width: 30%;
+            height: 800px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .right {
+            width: 70%;
+        }
+
+        .home {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #000;
+            transition: .2s ease;
+            margin: 10px 5px 30px;
+        }
+    </style>
+</body>
+
+</html>
