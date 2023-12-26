@@ -1,5 +1,5 @@
 var listCoursesBlock = document.querySelector('#list-project')
-var courseApi = "http://localhost:3000/TaiLieu"
+var courseApi = "https://zfjyk6-3000.csb.app/TaiLieu"
 
 
 function start() {

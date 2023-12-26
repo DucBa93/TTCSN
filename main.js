@@ -1,7 +1,7 @@
 const after = document.querySelector('.after')
 const listUser = document.querySelector('.listUser')
 const form = document.querySelector('.form')
-let apiUser = "http://localhost:3000/user"
+let apiUser = "https://zfjyk6-3000.csb.app/user"
 const formPopup = document.querySelector(".form-popup")
 const hidePopupBtn = document.querySelector(".form-popup .close-btn")
 const loginSignupLink = document.querySelectorAll(".form-box .bottom-link a")
